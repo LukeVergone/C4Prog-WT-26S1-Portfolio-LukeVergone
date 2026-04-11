@@ -91,4 +91,28 @@
         flex: 1;
         
     }
+
+    .aside-section {
+        background: #d7d9da;
+        margin: 10px;
+        font-family: Helvetica;      
+    }
+
+    .aside-heading {
+        background: #989a9b;
+        font-size: large;    
+        margin: 0 auto;
+    }
+
+    .aside-content{
+        background: #7391a0;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .aside-footer{
+        background: #5c2b2b;
+        color:#fff;
+        font-size: small;
+    }
 }
