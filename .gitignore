@@ -896,3 +896,6 @@ Temporary Items
 .apdisk
 .png
 *.png
+
+# Directories for phase-1/evidence
+phase-1/evidence/
