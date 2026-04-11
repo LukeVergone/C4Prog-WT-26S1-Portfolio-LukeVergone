@@ -10,7 +10,6 @@
 }
 
 
-
 .hamburger-menu {
     background: none;
     
@@ -28,7 +27,18 @@
     background: #fff;
 }
 
+.nav {
+    display: none;
+}
 
+@media (min-width: 768px) {
+    .nav {
+        display: block;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+}
 .main {
     background: #87CEFA;
     color: #00008B;
