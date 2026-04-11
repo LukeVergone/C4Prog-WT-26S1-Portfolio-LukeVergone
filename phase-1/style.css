@@ -44,9 +44,8 @@
 }
 
 .aside {
-    background: #9e7bc7;
-    color: #00008B;
-    padding: 1rem;
+    display: none;
+    
 }
 
 .tile {
@@ -88,7 +87,9 @@
     }
 
     .aside {
+        display: block;
         flex: 1;
+        background: #c2d1cd;
         
     }
 
