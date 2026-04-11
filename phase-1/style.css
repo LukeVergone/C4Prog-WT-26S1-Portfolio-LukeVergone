@@ -33,22 +33,24 @@
 
 .layout {
     display: block;
+    background: #d1d4d4;
+
 }
 
 .main {
-    background: #87CEFA;
+    background: #a8d1eb;
     color: #00008B;
     padding: 1rem;
 }
 
 .aside {
-    background: #622e9e;
+    background: #9e7bc7;
     color: #00008B;
     padding: 1rem;
 }
 
 .tile {
-    background: #acabab;
+    background: #f7dfc8;
     color: #41008b;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -75,9 +77,9 @@
         gap: 2rem;
         max-width: 1500px;
         margin: 0 auto;
-        align-items: flex-start;
+        align-items: stretch;
         padding: 2rem;
-        background: #87CEFA;
+        
     }
     
     .main {
@@ -87,5 +89,6 @@
 
     .aside {
         flex: 1;
+        
     }
 }
