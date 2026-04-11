@@ -31,11 +31,28 @@
     display: none;
 }
 
+.layout {
+    display: block;
+}
 
 .main {
     background: #87CEFA;
     color: #00008B;
     padding: 1rem;
+}
+
+.aside {
+    background: #622e9e;
+    color: #00008B;
+    padding: 1rem;
+}
+
+.tile {
+    background: #acabab;
+    color: #41008b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
 .footer {
@@ -53,9 +70,22 @@
     .hamburger-menu {
         display: none;
     }
-    .main {
+    .layout {
+        display: flex;
+        gap: 2rem;
         max-width: 1500px;
         margin: 0 auto;
+        align-items: flex-start;
         padding: 2rem;
+        background: #87CEFA;
+    }
+    
+    .main {
+        
+        flex: 3;
+    }
+
+    .aside {
+        flex: 1;
     }
 }
