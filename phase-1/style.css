@@ -9,3 +9,11 @@
     color: #00008B;
     padding: 1rem;
 }
+
+.footer {
+
+    background: #e9ecee;
+    color: brown;
+    padding: 1rem;
+    font-size: small;
+}
