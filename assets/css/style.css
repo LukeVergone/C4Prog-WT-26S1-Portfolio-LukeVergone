@@ -55,6 +55,8 @@ img {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     flex: 3;
     min-width: 0;
     background: #a8d1eb;
