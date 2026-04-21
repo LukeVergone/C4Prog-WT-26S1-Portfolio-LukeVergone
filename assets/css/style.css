@@ -42,6 +42,7 @@ img {
 
 .nav {
     display: none;
+    align-items: flex-start;
 }
 
 .layout {
@@ -84,7 +85,8 @@ img {
 }
 
 .footer {
-
+    display: flex;
+    align-items: flex-start;
     background: rgb(233, 236, 238);
     color: rgb(165, 42, 42);
     padding: 1rem;
@@ -93,7 +95,8 @@ img {
 
 @media (min-width: 768px) {  
     .nav {
-        display: block;
+        display: flex;
+        align-items: flex-start;
     }
     .hamburger-menu {
         display: none;
