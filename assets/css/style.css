@@ -23,6 +23,10 @@ img {
   
 }
 
+.visually-hidden {
+    display:none;
+}
+
 
 .hamburger-menu {
     background: none;
@@ -42,7 +46,6 @@ img {
 
 .nav {
     display: none;
-    align-items: flex-start;
 }
 
 .layout {
@@ -96,7 +99,17 @@ img {
 @media (min-width: 768px) {  
     .nav {
         display: flex;
-        align-items: flex-start;
+        
+    }
+    
+    .nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        text-indent: 1rem;
+        margin: 1px;
+        padding: 10px;
+       
     }
     .hamburger-menu {
         display: none;
@@ -105,7 +118,7 @@ img {
         display: flex;
         gap: 3rem;
         max-width: 1500px;
-        margin: 3 auto;
+        margin: auto;
         padding: 2rem;
         
     }
@@ -137,7 +150,7 @@ img {
 
     .aside-content{
         background: rgb(115, 145, 160);
-        height: 0 auto;
+        height: auto;
         min-height: 3rem;
         margin: 0 auto;
     }
