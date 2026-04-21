@@ -26,7 +26,6 @@ img {
 
 .hamburger-menu {
     background: none;
-    
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -59,7 +58,7 @@ img {
     flex: 3;
     min-width: 0;
     background: #a8d1eb;
-    color: rgb(0, 0, 139);
+    color: rgb(13, 13, 19);
     padding: 1rem;
     
 }
@@ -121,19 +120,20 @@ img {
 
     .aside-section {
         background: rgb(215, 217, 218);
-        margin: 10px;
+        margin: 8px;
         font-family: Helvetica;      
     }
 
     .aside-heading {
         background: rgb(152, 154, 155);
         font-size: large;    
-        margin: 0 auto;
+        margin: 0;
     }
 
     .aside-content{
         background: rgb(115, 145, 160);
-        height: 100px;
+        height: 0 auto;
+        min-height: 3rem;
         margin: 0 auto;
     }
 
