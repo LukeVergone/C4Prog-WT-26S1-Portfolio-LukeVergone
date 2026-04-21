@@ -1,3 +1,17 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tile img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
 .header {
   background: #222222;
   color: hsl(0, 0%, 100%);
@@ -38,9 +52,12 @@
 }
 
 .main {
+    flex: 3;
+    min-width: 0;
     background: #a8d1eb;
     color: rgb(0, 0, 139);
     padding: 1rem;
+    
 }
 
 .aside {
@@ -64,7 +81,7 @@
     font-size: small;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
     .nav {
         display: block;
     }
