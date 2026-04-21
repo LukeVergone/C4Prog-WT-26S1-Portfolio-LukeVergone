@@ -48,16 +48,25 @@ img {
 .layout {
     display: block;
     background: #d1d4d4;
+    
 
 }
 
 .main {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
     flex: 3;
     min-width: 0;
     background: #a8d1eb;
     color: rgb(0, 0, 139);
     padding: 1rem;
     
+}
+
+.content {
+    flex: 3;
+    min-width: 0;
 }
 
 .aside {
@@ -90,10 +99,9 @@ img {
     }
     .layout {
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         max-width: 1500px;
-        margin: 0 auto;
-        align-items: stretch;
+        margin: 3 auto;
         padding: 2rem;
         
     }
@@ -101,6 +109,7 @@ img {
     .main {
         
         flex: 3;
+        max-width: 1500px;
     }
 
     .aside {
