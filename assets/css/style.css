@@ -107,6 +107,36 @@ img {
     bottom: 0px;
 }
 
+    .footer-nav{
+        display: flex;
+        position: relative;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        position: relative;
+        list-style: none;
+        
+        margin: 0;
+        padding: 1rem;
+
+}
+
+.footer-nav ul li {
+    margin: 0 10px;
+}
+
+.footer-nav ul li::after{
+    content: "|";
+    margin-left: 10px;
+}
+
+.footer-nav ul li:last-child::after{
+    content: "";
+}
+
+
+
 @media (min-width: 768px) {  
     .header{
         position: fixed;
@@ -200,17 +230,3 @@ img {
         z-index: 1000;
     }
 
-    .footer-nav{
-        display: flex;
-        position: relative;
-    }
-
-    .footer-nav ul {
-        display: flex;
-        position: relative;
-        gap: 2rem;
-        list-style: none;
-        text-indent: 1rem;
-        margin: 1px;
-        padding: 10px;
-}
