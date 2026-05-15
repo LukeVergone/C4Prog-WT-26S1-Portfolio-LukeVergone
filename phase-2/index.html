@@ -80,23 +80,30 @@
           />
         </article>
 
-        <article class="tile">
+        <article class="api-form-tile">
           <!--Phase 2: Input Form with API Call-->
 
           <h2>Ninja API App</h2>
 
           <form class="api-form">
-            <label>
-              <input type="checkbox" id="historicEvent" name="Historic Event" />
-              Historic Event that occurred on this day<br />
-              <small>(https://api-ninjas.com/api/historicalevents )</small>
-            </label>
+            <h3>Choose one of the below APIs:</h3>
+            <section class="checkbox-selection">
+              <label>
+                <input
+                  type="checkbox"
+                  id="historicEvent"
+                  name="Historic Event"
+                />
+                Historic Event that occurred on this day<br />
+                <small>(https://api-ninjas.com/api/historicalevents )</small>
+              </label>
 
-            <label>
-              <input type="checkbox" id="randomQuote" name="Random Quote" />
-              Generate Random Quote <br />
-              <small>(https://api-ninjas.com/api/quotes)</small>
-            </label>
+              <label>
+                <input type="checkbox" id="randomQuote" name="Random Quote" />
+                Generate Random Quote <br />
+                <small>(https://api-ninjas.com/api/quotes)</small>
+              </label>
+            </section>
 
             <button>Go</button>
           </form>

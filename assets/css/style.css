@@ -96,14 +96,41 @@ img {
     border-radius: 8px;
 }
 
+.api-form-tile {
+    display: flex;
+    flex-direction: column;
+    background: rgb(212, 241, 243);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+
+}
+
 .api-form {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #fff;
     flex: 1;
-    margin: 1rem;
+   
     padding: 1rem;
-    text-indent: 10px;
+    
+
+}
+
+.checkbox-selection {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    
+    
 
 }
 
