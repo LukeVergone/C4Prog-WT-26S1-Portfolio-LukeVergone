@@ -17,7 +17,7 @@ async function fetchRandomQuote(category){
         }
     });  
     return await response.json();
-};
+}
 
 async function fetchHistoricEvent(year){
     const response = await fetch(
@@ -57,7 +57,7 @@ buttonExecuteAPICall.addEventListener("click", async (event) => {
             apiCallResult.value = `Please choose one of the following categories: \nwisdom, philosophy, life, truth, inspirational, relationships, love, faith, humor, success, courage, happiness, art, writing, fear, nature, time, freedom, death or leadership.`;
         }
         else {
-            data = await fetchRandomQuote(userText.value);
+            const data = await fetchRandomQuote(userText.value);
         
         //API returned no results:
         if (data.length === 0){
@@ -77,7 +77,7 @@ buttonExecuteAPICall.addEventListener("click", async (event) => {
 
         }
         else {
-            data = await fetchHistoricEvent(userText.value);
+            const data = await fetchHistoricEvent(userText.value);
 
         //API returned no results
         if (data.length === 0){
