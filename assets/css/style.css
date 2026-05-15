@@ -99,6 +99,7 @@ img {
 .api-form-tile {
     display: flex;
     flex-direction: column;
+    width: 100%;
     background: rgb(212, 241, 243);
     color: rgb(0, 0, 0);
     justify-content: center;
@@ -111,12 +112,13 @@ img {
 
 .api-form {
     display: flex;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     background: #fff;
     flex: 1;
-   
+    gap: 1rem;   
     padding: 1rem;
     
 
@@ -129,14 +131,20 @@ img {
     justify-content: center;
     align-items: center;
 
-    
-    
+}
 
+.api-call-button {
+    width: auto;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    color:#fff;
+    background: #3b57f1;
 }
 
 .api-results {
-    display: block;
-    
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
 }
 
 .footer {
