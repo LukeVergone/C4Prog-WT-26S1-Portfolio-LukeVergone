@@ -87,7 +87,7 @@
 
           <form class="api-form">
             <h3>Choose one of the below APIs:</h3>
-            <section class="checkbox-selection">
+            <div class="checkbox-selection">
               <label>
                 <input
                   type="checkbox"
@@ -103,13 +103,14 @@
                 Generate Random Quote <br />
                 <small>(https://api-ninjas.com/api/quotes)</small>
               </label>
-            </section>
+            </div>
 
             <input type="text" id="userText" name="user input text" />
 
             <button id="buttonExecuteAPICall">Get Response</button>
 
             <section>
+              <h4>API Response:</h4>
               <textarea id="apiCallResult" class="api-results"> </textarea>
             </section>
           </form>
