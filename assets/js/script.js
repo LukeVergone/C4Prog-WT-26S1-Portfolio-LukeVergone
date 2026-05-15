@@ -14,10 +14,36 @@ async function fetchRandomQuote(category){
     const response = await fetch(`https://api.api-ninjas.com/v2/randomquotes?categories=${category}`, {
         headers: {
             "X-Api-Key": apiKey
+            }
         }
-    });  
-    return await response.json();
-}
+    );  
+    switch (response.status) {
+        case 400:
+            alert("API Error Code 400: Bad Request. \nPlease ensure correct API key is in use.");
+            break;
+        case 403:
+            alert("API Error Code 403: Forbidden. \nPlease check the API endpoint URL is correct.");
+            break;
+        case 404:
+            alert("API Error Code 404: Not Found. \nPlease check the API endpoint URL is correct.");
+            break;
+        case 429:
+            alert("API Error Code 429: Too Many Requests. \nThe API Key Rate limit has been exceeded. Please wait before making further requests.");
+            break;
+        case 500:
+            alert("API Error Code 500: Internal Server Error. \nAn unexpected error occurred on our servers. Please retry your request later.");
+            break;
+        default:
+            return await response.json();
+
+
+    }
+    
+  
+        
+    }
+    
+
 
 async function fetchHistoricEvent(year){
     const response = await fetch(
@@ -28,8 +54,27 @@ async function fetchHistoricEvent(year){
             }
         }
     );
+    switch (response.status) {
+        case 400:
+            alert("API Error Code 400: Bad Request. \nPlease ensure correct API key is in use.");
+            break;
+        case 403:
+            alert("API Error Code 403: Forbidden. \nPlease check the API endpoint URL is correct.");
+            break;
+        case 404:
+            alert("API Error Code 404: Not Found. \nPlease check the API endpoint URL is correct.");
+            break;
+        case 429:
+            alert("API Error Code 429: Too Many Requests. \nThe API Key Rate limit has been exceeded. Please wait before making further requests.");
+            break;
+        case 500:
+            alert("API Error Code 500: Internal Server Error. \nAn unexpected error occurred on our servers. Please retry your request later.");
+            break;
+        default:
+            return await response.json();
 
-    return await response.json();
+
+    }
 
 }
 
