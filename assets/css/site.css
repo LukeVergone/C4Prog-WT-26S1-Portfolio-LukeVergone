@@ -554,9 +554,121 @@ video {
   display: none;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\'assets\/img\/ciocan-ciprian-AyLsQ9G1zeY-unsplash\.jpg\'\)\] {
+  background-image: url('assets/img/ciocan-ciprian-AyLsQ9G1zeY-unsplash.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/ciocan-ciprian-AyLsQ9G1zeY-unsplash\.jpg\'\)\] {
+  background-image: url('../assets/img/ciocan-ciprian-AyLsQ9G1zeY-unsplash.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/ciocan-ciprian-AyLsQ9G1zeY-unsplash\.jpg\'\)\] {
+  background-image: url('./assets/img/ciocan-ciprian-AyLsQ9G1zeY-unsplash.jpg');
+}
+
+.bg-\[url\(\'\/assets\/img\/ciocan-ciprian-AyLsQ9G1zeY-unsplash\.jpg\'\)\] {
+  background-image: url('/assets/img/ciocan-ciprian-AyLsQ9G1zeY-unsplash.jpg');
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -571,4 +683,23 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }
